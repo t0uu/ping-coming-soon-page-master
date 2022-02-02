@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+:root {
+  --Color--Blue: rgb(79, 125, 243);
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+  --Color--Gray: hsl(0, 0%, 59%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (max-width: 1440px) {
+  body {
+    font-size: 20px;
+    font-family: 'Libre Franklin', sans-serif;
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 1rem;
+  }
+  main img {
+    width: 100px;
+    padding: 1rem;
+    font-weight: 700;
+  }
+  main h1 {
+    color: var(--Color--Gray);
+  }
+  main h1 b {
+    color: black;
+  }
+  main p {
+    color: var(--Very-Dark-Blue);
+    font-size: 16px;
+    padding: 1rem;
+  }
+  main form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main form label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main form label #email {
+    width: 300px;
+    padding: 0.8rem;
+    border-radius: 20px;
+    border: 1px solid var(--Pale-Blue);
+  }
+  main form label #email::-webkit-input-placeholder {
+    color: var(--Pale-Blue);
+  }
+  main form label #email:-ms-input-placeholder {
+    color: var(--Pale-Blue);
+  }
+  main form label #email::-ms-input-placeholder {
+    color: var(--Pale-Blue);
+  }
+  main form label #email::placeholder {
+    color: var(--Pale-Blue);
+  }
+  main form label .invalid {
+    border: 1px solid var(--Light-Red);
+  }
+  main form label small {
+    font-size: 12px;
+    margin-left: 1rem;
+  }
+  main form label .error {
+    color: var(--Light-Red);
+  }
+  main form label .success {
+    color: green;
+  }
+  main form .btn {
+    margin-left: 1rem;
+    width: 120px;
+    height: 45px;
+    border-radius: 20px;
+    border: none;
+    -webkit-box-shadow: 6px 4px 5px 0px rgba(79, 125, 243, 0.24);
+            box-shadow: 6px 4px 5px 0px rgba(79, 125, 243, 0.24);
+    background-color: var(--Color--Blue);
+    cursor: pointer;
+    color: white;
+  }
+  .centerImg {
+    text-align: center;
+  }
+  .centerImg img {
+    width: 40%;
+  }
+  footer .ListFooter {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  footer .ListFooter .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .ListFooter .container a {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0.5rem;
+    text-decoration: none;
+    color: var(--Color--Blue);
+    border: 1px solid var(--Pale-Blue);
+    border-radius: 20px;
+    padding: 0.4rem;
+  }
+  footer .ListFooter .container a i {
+    height: 20px;
+    width: 20px;
+  }
+  footer .ListFooter .container a:hover {
+    background-color: var(--Color--Blue);
+    color: white;
+  }
+  footer .ListFooter p {
+    font-size: 16px;
+  }
+  footer .attribution {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 414px) {
+  main h1 {
+    font-size: 32px;
+  }
+  main form {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main form label #email {
+    margin-top: 1rem;
+    width: 300px;
+  }
+  main form .btn {
+    width: 300px;
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+  .centerImg img {
+    width: 90%;
+    margin: 1rem;
+  }
+  footer .ListFooter .container {
+    margin-top: 5rem;
+  }
+  footer .ListFooter p {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

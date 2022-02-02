@@ -1,0 +1,180 @@
+
+// Colors
+:root{
+    // ### Primary
+    --Color--Blue: rgb(79, 125, 243);
+    // ### Secondary
+    --Pale-Blue: hsl(223, 100%, 88%);
+    --Light-Red: hsl(354, 100%, 66%);
+    // ### Neutral
+    --Color--Gray: hsl(0, 0%, 59%);
+    --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media(max-width:1440px){
+    body{
+        font-size: 20px;
+        font-family: 'Libre Franklin', sans-serif;
+
+    }
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 1rem;
+        img{
+            width: 100px;
+            padding: 1rem;
+            font-weight: 700;
+        }
+        h1{
+            color: var(--Color--Gray);
+            b{
+                color: black;
+            }
+        }
+        p{
+            color: var(--Very-Dark-Blue);
+            font-size: 16px;
+            padding: 1rem;
+        }
+        form{
+            display: flex;
+            flex-direction: row;
+            label{
+                display: flex;
+                flex-direction: column;
+                #email{
+                    width: 300px;
+                    padding: 0.8rem;
+                    border-radius: 20px;
+                    border: 1px solid var(--Pale-Blue);
+                }
+                #email::placeholder{
+                    color: var(--Pale-Blue);
+                }
+
+                .invalid{
+                    border: 1px solid var(--Light-Red);
+                }
+                small{
+                    font-size: 12px;
+                    margin-left: 1rem;
+                }
+                .error{
+                    color: var(--Light-Red);
+                }
+                .success{
+                    color: green;
+            }
+         }
+            .btn{
+                margin-left: 1rem;
+                width: 120px;
+                height: 45px;
+                border-radius: 20px;
+                border: none;
+                box-shadow: 6px 4px 5px 0px rgba(79,125,243,0.24);
+                background-color: var(--Color--Blue);
+                cursor: pointer;
+                color: white;
+            }
+        }
+    }
+
+    .centerImg{
+        text-align: center;
+        img{
+            width: 40%;
+        }
+    }
+    footer{
+        .ListFooter{
+            align-items: center;
+            text-align: center;
+            .container{
+                display: flex;
+                justify-content: center;
+
+                a{
+                    align-items: center;
+                    margin: 0.5rem;
+                    text-decoration: none;
+                    color: var(--Color--Blue);
+                    border: 1px solid var(--Pale-Blue);
+                    border-radius: 20px;
+                    padding: 0.4rem;
+                    i{
+                        height: 20px;
+                        width: 20px;
+                    }
+                    &:hover{
+                        background-color: var(--Color--Blue);
+                        color: white;
+                    }
+                }
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+        .attribution{
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+}
+
+@media(max-width: 414px){
+    
+    main{
+
+        h1{
+            font-size: 32px;
+        }
+        form{
+            justify-content: center;
+            flex-direction: column;
+            label{
+
+            #email{
+                margin-top: 1rem;
+                width: 300px;
+            }
+        }
+
+            .btn{
+            width: 300px;
+            margin-left: 0;
+            margin-top: 1rem;
+        }
+        }
+    }
+    .centerImg{
+        img{
+            width: 90%;
+            margin: 1rem;
+        }
+    }
+    footer{
+        .ListFooter{
+            .container{
+                margin-top: 5rem;
+            }
+            p{
+                margin-top: 1rem;
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}
